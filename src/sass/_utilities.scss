@@ -1,0 +1,131 @@
+$utilities: (
+  "font-size": (
+    "prefix": "font",
+    "values": (
+      "sm": $sm-font-size,
+      "md": $md-font-size,
+      "lg": $lg-font-size,
+      "xl": $xl-font-size,
+      "base": $base-font-size,
+    ),
+  ),
+  "display": (
+    "prefix": "d",
+    "values": (
+      "flex": flex,
+      "inline-block": inline-block,
+      "block": block,
+      "none": none,
+    ),
+  ),
+  "flex-direction": (
+    "prefix": "direction",
+    "values": (
+      "row": row,
+      "column": column,
+    ),
+  ),
+  "border-radius": (
+    "prefix": "rounded",
+    "values": (
+      "5": 5px,
+      "10": 10px,
+      "15": 15px,
+      "20": 20px,
+      "full": 50%,
+    ),
+  ),
+);
+
+// generate utility classes
+@each $property, $map in $utilities {
+  $prefix: map-get($map, "prefix");
+  $values: map-get($map, "values");
+
+  @each $k, $v in $values {
+    .#{$prefix}-#{$k} {
+      #{$property}: $v;
+    }
+  }
+}
+
+// Flex utilities
+
+$justify-values: flex-start, flex-end, center, space-between, space-around;
+$align-values: stretch, flex-start, flex-end, center;
+
+@each $val in $justify-values {
+  .justify-#{$val} {
+    justify-content: $val;
+  }
+}
+
+@each $val in $align-values {
+  .align-#{$val} {
+    align-items: $val;
+  }
+}
+
+// Utilities Width
+
+$size-values: width, min-width, max-width;
+
+@each $val in $size-values {
+  @for $i from 1 through 20 {
+    $name: $i * 5;
+
+    .#{$val}-#{$name} {
+      #{$val}: $i * 5%;
+    }
+  }
+}
+
+@include sm {
+  @each $val in $size-values {
+    @for $i from 1 through 20 {
+      $name: $i * 5;
+
+      .#{$val}-sm-#{$name} {
+        #{$val}: $i * 5%;
+      }
+    }
+  }
+}
+
+@include md {
+  @each $val in $size-values {
+    @for $i from 1 through 20 {
+      $name: $i * 5;
+
+      .#{$val}-md-#{$name} {
+        #{$val}: $i * 5%;
+      }
+    }
+  }
+}
+
+@include lg {
+  @each $val in $size-values {
+    @for $i from 1 through 20 {
+      $name: $i * 5;
+
+      .#{$val}-lg-#{$name} {
+        #{$val}: $i * 5%;
+      }
+    }
+  }
+}
+
+@include xl {
+  @each $val in $size-values {
+    @for $i from 1 through 20 {
+      $name: $i * 5;
+
+      .#{$val}-xl-#{$name} {
+        #{$val}: $i * 5%;
+      }
+    }
+  }
+}
+
+//sistema de grid con container, border

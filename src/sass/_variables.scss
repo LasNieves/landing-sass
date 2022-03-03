@@ -1,0 +1,29 @@
+// theme colors
+$primary: #181818 !default;
+$secondary: #ffffff !default;
+$detail: #02e4c0 !default;
+$info: #4452fe !default;
+
+// color palette
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "detail": $detail,
+  "info": $info,
+  "gray": #565656,
+  "gru": #1e1e1e,
+) !default;
+
+//Margin & Padding
+$base-margin: 1rem;
+$base-padding: 1rem;
+
+//Border
+$base-border: 1px;
+
+// font size 16 20 32 52 80
+$base-font-size: 2rem !default; // 32px
+$sm-font-size: $base-font-size * 0.5 !default; // 16px
+$md-font-size: $base-font-size * 0.625 !default; // 20px
+$lg-font-size: $base-font-size * 1.625 !default; // 52px
+$xl-font-size: $base-font-size * 2.5 !default; // 80px

@@ -1,0 +1,118 @@
+%container-all {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+$grid-columns: 12;
+
+.container {
+  @extend %container-all;
+}
+
+.container-sm {
+  @extend %container-all;
+}
+
+.container-md {
+  @extend %container-all;
+}
+
+.container-lg {
+  @extend %container-all;
+}
+
+.container-xl {
+  @extend %container-all;
+}
+
+@include sm {
+  .container {
+    max-width: 400px;
+  }
+}
+
+@include md {
+  .container,
+  .container-sm {
+    max-width: 750px;
+  }
+}
+
+@include lg {
+  .container,
+  .container-sm,
+  .container-md {
+    max-width: 980px;
+  }
+}
+
+@include xl {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg {
+    max-width: 1380px;
+  }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    grid-column: span ($i);
+  }
+}
+
+@include sm {
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      grid-column: span ($i);
+    }
+  }
+}
+
+@include md {
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      grid-column: span ($i);
+    }
+  }
+}
+
+@include lg {
+  @for $i from 1 through 12 {
+    .col-lg-#{$i} {
+      grid-column: span ($i);
+    }
+  }
+}
+
+@include xl {
+  @for $i from 1 through 12 {
+    .col-xl-#{$i} {
+      grid-column: span ($i);
+    }
+  }
+}
+
+$grid-gaps: (
+  "0": 0,
+  "1": 10px,
+  "2": 20px,
+  "3": 30px,
+);
+
+// grid gaps
+@each $key, $val in $grid-gaps {
+  .gap-#{$key} > * {
+    padding: $val;
+  }
+  .gap-#{$key} {
+    margin-left: -$val;
+    margin-right: -$val;
+  }
+}
