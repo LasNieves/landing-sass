@@ -1,0 +1,22 @@
+@mixin buttonstyles($padding) {
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  padding: $padding;
+}
+
+.button {
+  @include buttonstyles(20px);
+  border: none;
+}
+
+.small-button {
+  @include buttonstyles(10px);
+  border: none;
+}
+
+.header-button {
+  @include buttonstyles(15px);
+  width: 100px;
+  background-color: transparent;
+  border: 1px solid #565656;
+}

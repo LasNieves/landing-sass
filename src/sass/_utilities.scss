@@ -35,6 +35,127 @@ $utilities: (
       "full": 50%,
     ),
   ),
+  "line-height": (
+    "prefix": "lh",
+    "values": (
+      "base": $base-line-height,
+      "sm": $sm-line-height,
+      "md": $md-line-height,
+      "lg": $lg-line-height,
+      "xl": $xl-line-height,
+    ),
+  ),
+  "padding": (
+    "prefix": "p",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 4,
+      "4": $base-padding * 6,
+      "5": $base-padding * 8,
+    ),
+  ),
+  "padding-left": (
+    "prefix": "pl",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 4,
+      "4": $base-padding * 6,
+      "5": $base-padding * 8,
+    ),
+  ),
+  "padding-right": (
+    "prefix": "pr",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 4,
+      "4": $base-padding * 6,
+      "5": $base-padding * 8,
+    ),
+  ),
+  "padding-top": (
+    "prefix": "pt",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 4,
+      "4": $base-padding * 6,
+      "5": $base-padding * 8,
+    ),
+  ),
+  "padding-bottom": (
+    "prefix": "pb",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 4,
+      "4": $base-padding * 6,
+      "5": $base-padding * 8,
+    ),
+  ),
+  "margin": (
+    "prefix": "m",
+    "values": (
+      "0": 0,
+      "1": $base-margin,
+      "2": $base-margin * 2,
+      "3": $base-margin * 4,
+      "4": $base-margin * 6,
+      "5": $base-margin * 8,
+      "auto": 0 auto,
+    ),
+  ),
+  "margin-left": (
+    "prefix": "ml",
+    "values": (
+      "0": 0,
+      "1": $base-margin,
+      "2": $base-margin * 2,
+      "3": $base-margin * 4,
+      "4": $base-margin * 6,
+      "5": $base-margin * 8,
+    ),
+  ),
+  "margin-right": (
+    "prefix": "mr",
+    "values": (
+      "0": 0,
+      "1": $base-margin,
+      "2": $base-margin * 2,
+      "3": $base-margin * 4,
+      "4": $base-margin * 6,
+      "5": $base-margin * 8,
+    ),
+  ),
+  "margin-top": (
+    "prefix": "mt",
+    "values": (
+      "0": 0,
+      "1": $base-margin,
+      "2": $base-margin * 2,
+      "3": $base-margin * 4,
+      "4": $base-margin * 6,
+      "5": $base-margin * 8,
+    ),
+  ),
+  "margin-bottom": (
+    "prefix": "mb",
+    "values": (
+      "0": 0,
+      "1": $base-margin,
+      "2": $base-margin * 2,
+      "3": $base-margin * 4,
+      "4": $base-margin * 6,
+      "5": $base-margin * 8,
+    ),
+  ),
 );
 
 // generate utility classes
@@ -47,6 +168,70 @@ $utilities: (
       #{$property}: $v;
     }
   }
+}
+
+@include sm {
+  @each $property, $map in $utilities {
+    $prefix: map-get($map, "prefix");
+    $values: map-get($map, "values");
+
+    @if ($prefix == "d") {
+      @each $k, $v in $values {
+        .#{$prefix}-sm-#{$k} {
+          #{$property}: $v;
+        }
+      }
+    }
+  }
+}
+
+@include md {
+  @each $property, $map in $utilities {
+    $prefix: map-get($map, "prefix");
+    $values: map-get($map, "values");
+
+    @if ($prefix == "d") {
+      @each $k, $v in $values {
+        .#{$prefix}-sm-#{$k} {
+          #{$property}: $v;
+        }
+      }
+    }
+  }
+}
+
+@include lg {
+  @each $property, $map in $utilities {
+    $prefix: map-get($map, "prefix");
+    $values: map-get($map, "values");
+
+    @if ($prefix == "d") {
+      @each $k, $v in $values {
+        .#{$prefix}-sm-#{$k} {
+          #{$property}: $v;
+        }
+      }
+    }
+  }
+}
+
+@include xl {
+  @each $property, $map in $utilities {
+    $prefix: map-get($map, "prefix");
+    $values: map-get($map, "values");
+
+    @if ($prefix == "d") {
+      @each $k, $v in $values {
+        .#{$prefix}-sm-#{$k} {
+          #{$property}: $v;
+        }
+      }
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
 }
 
 // Flex utilities
@@ -127,5 +312,3 @@ $size-values: width, min-width, max-width;
     }
   }
 }
-
-//sistema de grid con container, border

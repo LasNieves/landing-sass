@@ -15,8 +15,8 @@ $colors: (
 ) !default;
 
 //Margin & Padding
-$base-margin: 1rem;
-$base-padding: 1rem;
+$base-margin: 0.5rem;
+$base-padding: 0.5rem;
 
 //Border
 $base-border: 1px;
@@ -27,3 +27,10 @@ $sm-font-size: $base-font-size * 0.5 !default; // 16px
 $md-font-size: $base-font-size * 0.625 !default; // 20px
 $lg-font-size: $base-font-size * 1.625 !default; // 52px
 $xl-font-size: $base-font-size * 2.5 !default; // 80px
+
+// line height 62 58 30 24 16
+$base-line-height: 1rem !default; //16px
+$sm-line-height: $base-line-height * 1.5 !default; //24px
+$md-line-height: $base-line-height * 1.875 !default; //30px
+$lg-line-height: $base-line-height * 3.625 !default; //58px
+$xl-line-height: $base-line-height * 3.875 !default; //62px

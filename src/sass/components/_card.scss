@@ -1,0 +1,18 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  border: 1px solid #565656;
+
+  .card-title {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-around;
+  }
+
+  .card-description {
+    height: 150px;
+  }
+}

@@ -6,22 +6,10 @@
 
 $grid-columns: 12;
 
-.container {
-  @extend %container-all;
-}
-
-.container-sm {
-  @extend %container-all;
-}
-
-.container-md {
-  @extend %container-all;
-}
-
-.container-lg {
-  @extend %container-all;
-}
-
+.container,
+.container-sm,
+.container-md,
+.container-lg,
 .container-xl {
   @extend %container-all;
 }
