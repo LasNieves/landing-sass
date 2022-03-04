@@ -30,7 +30,7 @@ $xl-font-size: $base-font-size * 2.5 !default; // 80px
 
 // line height 62 58 30 24 16
 $base-line-height: 1rem !default; //16px
-$sm-line-height: $base-line-height * 1.5 !default; //24px
-$md-line-height: $base-line-height * 1.875 !default; //30px
-$lg-line-height: $base-line-height * 3.625 !default; //58px
-$xl-line-height: $base-line-height * 3.875 !default; //62px
+$sm-line-height: $base-line-height * 0.75 !default;
+$md-line-height: $base-line-height * 1.5 !default;
+$lg-line-height: $base-line-height * 2 !default;
+$xl-line-height: $base-line-height * 2.5 !default;

@@ -234,6 +234,14 @@ $utilities: (
   text-align: center;
 }
 
+.h-auto {
+  height: auto;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
 // Flex utilities
 
 $justify-values: flex-start, flex-end, center, space-between, space-around;
