@@ -816,7 +816,7 @@ img {
   color: #1e1e1e;
 }
 
-.card {
+.card-testimonios, .card-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -827,11 +827,16 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 40px;
+  gap: 20px;
+  border-radius: 7px;
+}
+
+.card-testimonios {
+  padding: 20px;
   border: 1px solid #565656;
 }
 
-.card .card-title {
+.card-testimonios .card-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -839,13 +844,31 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 60%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  gap: 20px;
 }
 
-.card .card-description {
+.card-testimonios .card-subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+.card-testimonios .card-description {
   height: 150px;
+}
+
+.card-items {
+  padding: 40px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  text-align: center;
 }
 
 .button {
