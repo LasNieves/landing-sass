@@ -1,5 +1,4 @@
 import React from "react";
-import "../sass/index.css";
 import TestimoniosCards from "./TestimoniosCards";
 import Avatar1 from "../img/Avatar1.svg";
 import Avatar2 from "../img/Avatar2.svg";

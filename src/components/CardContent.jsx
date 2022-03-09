@@ -1,5 +1,4 @@
 import React from "react";
-import "../sass/index.css";
 import SingleCardContent from "./SingleCardContent";
 import Mackbook from "../img/MacbookPro.svg";
 import BoardsNotification from "../img/BoardsNotifications.svg";

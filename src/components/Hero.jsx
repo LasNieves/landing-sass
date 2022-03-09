@@ -1,5 +1,4 @@
 import React from "react";
-import "../sass/index.css";
 import heroImage from "../img/heroImage.svg";
 
 const Hero = () => {

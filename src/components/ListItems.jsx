@@ -1,5 +1,4 @@
 import React from "react";
-import "../sass/index.css";
 
 const ListItems = ({ icon, title1, title2, description }) => {
   return (

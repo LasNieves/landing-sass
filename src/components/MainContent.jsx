@@ -1,5 +1,4 @@
 import React from "react";
-import "../sass/index.css";
 import mainImg from "../img/mainImg.svg";
 import icon1 from "../img/icon1.svg";
 import icon2 from "../img/icon2.svg";

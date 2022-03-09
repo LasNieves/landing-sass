@@ -832,7 +832,7 @@ img {
 }
 
 .card-testimonios {
-  padding: 20px;
+  padding: 30px;
   border: 1px solid #565656;
 }
 
@@ -858,10 +858,6 @@ img {
   gap: 5px;
 }
 
-.card-testimonios .card-description {
-  height: 150px;
-}
-
 .card-items {
   padding: 40px 20px;
   -webkit-box-align: center;
@@ -874,21 +870,32 @@ img {
 .button {
   letter-spacing: 0.4px;
   cursor: pointer;
-  padding: 15px;
+  padding: 15px 15px;
+  font-family: inherit;
   border: none;
 }
 
 .small-button {
   letter-spacing: 0.4px;
   cursor: pointer;
-  padding: 10px;
+  padding: 10px 10px;
+  font-family: inherit;
+  border: none;
+}
+
+.cta-button {
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  padding: 5px 30px;
+  font-family: inherit;
   border: none;
 }
 
 .header-button {
   letter-spacing: 0.4px;
   cursor: pointer;
-  padding: 15px;
+  padding: 15px 15px;
+  font-family: inherit;
   width: 100px;
   background-color: transparent;
   border: 1px solid #565656;
@@ -984,6 +991,10 @@ img {
 
 .lh-xl {
   line-height: 2.5rem;
+}
+
+.lh-xxl {
+  line-height: 4.5rem;
 }
 
 .p-0 {

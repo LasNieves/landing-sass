@@ -1,5 +1,4 @@
 import React from "react";
-import "../sass/index.css";
 import hamburger from "../img/hamburger.svg";
 import nucba from "../img/nucba.svg";
 

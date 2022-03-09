@@ -1,5 +1,4 @@
 import React from "react";
-import "../sass/index.css";
 
 const TestimoniosCards = ({ title1, title2, description, img }) => {
   return (

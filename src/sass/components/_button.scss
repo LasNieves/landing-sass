@@ -1,21 +1,27 @@
-@mixin buttonstyles($padding) {
+@mixin buttonstyles($padding-y, $padding-x) {
   letter-spacing: 0.4px;
   cursor: pointer;
-  padding: $padding;
+  padding: $padding-y $padding-x;
+  font-family: inherit;
 }
 
 .button {
-  @include buttonstyles(15px);
+  @include buttonstyles(15px, 15px);
   border: none;
 }
 
 .small-button {
-  @include buttonstyles(10px);
+  @include buttonstyles(10px, 10px);
+  border: none;
+}
+
+.cta-button {
+  @include buttonstyles(5px, 30px);
   border: none;
 }
 
 .header-button {
-  @include buttonstyles(15px);
+  @include buttonstyles(15px, 15px);
   width: 100px;
   background-color: transparent;
   border: 1px solid #565656;

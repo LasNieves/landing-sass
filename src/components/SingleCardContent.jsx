@@ -1,5 +1,4 @@
 import React from "react";
-import "../sass/index.css";
 
 const SingleCardContent = ({ title, description, img }) => {
   return (
