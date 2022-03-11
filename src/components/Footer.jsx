@@ -7,9 +7,9 @@ import twitter from "../img/twitter.svg";
 
 const Footer = () => {
   return (
-    <footer className="container-sm row">
-      <div className="col-6 m-auto text-secondary">
-        <div>
+    <footer className="container-sm row justify-center">
+      <div className="col-6 col-md-9 row justify-center text-secondary">
+        <div className="d-md-flex col-md-12 justify-space-between">
           <div className="d-flex direction-column mb-3">
             <h5 className="lh-xxl font-md">#SomosDATOS</h5>
             <a className="lh-xl" href="#">
@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-5">
+        <div className="col-md-5 mt-5">
           <div className="d-flex direction-column text-secondary">
             <div className="d-flex direction-row align-center mb-3">
               <img className="mr-1" src={gps} alt="icongps" />

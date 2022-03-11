@@ -14,7 +14,7 @@ const Testimonios = () => {
             Testimonios
           </h2>
         </div>
-        <div className="col-10 col-md-6 mb-3">
+        <div className="row col-10 col-md-11 mb-3 justify-space-around">
           <TestimoniosCards
             title1="El sr. Miyagi"
             title2="Comerciante"

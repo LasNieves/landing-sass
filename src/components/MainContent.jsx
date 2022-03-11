@@ -11,14 +11,14 @@ const MainContent = () => {
       <div className="row justify-center">
         <div className="col-9 mb-3">
           <h2 className="text-center font-base text-secondary lh-xl">
-            Potenciá <br /> tu producto
+            Potenciá <br className="d-md-none" /> tu producto
           </h2>
           <p className="text-center font-sm text-secondary lh-md mt-3">
             Lleve predicciones dinámicas de MLa su propia aplicación utilizando
-            nuestra APIde bajo código.Haz predicciones en tiempo real.
+            nuestra APIde bajo código. Haz predicciones en tiempo real.
           </p>
         </div>
-        <div className="col-8 mb-3">
+        <div className="col-8 d-flex justify-center mb-3">
           <img src={mainImg} alt="Potencia tu producto" />
         </div>
         <div className="col-7 d-flex direction-column gap-2">
