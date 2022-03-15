@@ -6,7 +6,7 @@ import Hero from './components/Hero';
 import MainContent from './components/MainContent';
 import Testimonios from './components/Testimonios';
 import logo from './logo.svg';
-import './sass/index.css';
+import './css/index.css';
 
 function App() {
   return (
