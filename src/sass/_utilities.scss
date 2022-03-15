@@ -321,25 +321,36 @@ $align-values: stretch, flex-start, flex-end, center;
 
 // Utilities Width
 
-$size-values: width, min-width, max-width;
+$size-values: width, min-width, max-width, margin;
 
 @each $val in $size-values {
-  @for $i from 1 through 20 {
-    $name: $i * 5;
-
-    .#{$val}-#{$name} {
-      #{$val}: $i * 5%;
+  @if ($val != "margin") {
+    @for $i from 1 through 20 {
+      $name: $i * 5;
+      .#{$val}-#{$name} {
+        #{$val}: $i * 5%;
+      }
+    }
+  } @else {
+    .#{$val}-0 {
+      #{$val}: 0;
     }
   }
 }
 
 @include sm {
   @each $val in $size-values {
-    @for $i from 1 through 20 {
-      $name: $i * 5;
+    @if ($val != "margin") {
+      @for $i from 1 through 20 {
+        $name: $i * 5;
 
-      .#{$val}-sm-#{$name} {
-        #{$val}: $i * 5%;
+        .#{$val}-sm-#{$name} {
+          #{$val}: $i * 5%;
+        }
+      }
+    } @else {
+      .#{$val}-sm-0 {
+        #{$val}: 0;
       }
     }
   }
@@ -347,11 +358,17 @@ $size-values: width, min-width, max-width;
 
 @include md {
   @each $val in $size-values {
-    @for $i from 1 through 20 {
-      $name: $i * 5;
+    @if ($val != "margin") {
+      @for $i from 1 through 20 {
+        $name: $i * 5;
 
-      .#{$val}-md-#{$name} {
-        #{$val}: $i * 5%;
+        .#{$val}-md-#{$name} {
+          #{$val}: $i * 5%;
+        }
+      }
+    } @else {
+      .#{$val}-md-0 {
+        #{$val}: 0;
       }
     }
   }
@@ -359,11 +376,17 @@ $size-values: width, min-width, max-width;
 
 @include lg {
   @each $val in $size-values {
-    @for $i from 1 through 20 {
-      $name: $i * 5;
+    @if ($val != "margin") {
+      @for $i from 1 through 20 {
+        $name: $i * 5;
 
-      .#{$val}-lg-#{$name} {
-        #{$val}: $i * 5%;
+        .#{$val}-lg-#{$name} {
+          #{$val}: $i * 5%;
+        }
+      }
+    } @else {
+      .#{$val}-lg-0 {
+        #{$val}: 0;
       }
     }
   }
@@ -371,11 +394,17 @@ $size-values: width, min-width, max-width;
 
 @include xl {
   @each $val in $size-values {
-    @for $i from 1 through 20 {
-      $name: $i * 5;
+    @if ($val != "margin") {
+      @for $i from 1 through 20 {
+        $name: $i * 5;
 
-      .#{$val}-xl-#{$name} {
-        #{$val}: $i * 5%;
+        .#{$val}-xl-#{$name} {
+          #{$val}: $i * 5%;
+        }
+      }
+    } @else {
+      .#{$val}-xl-0 {
+        #{$val}: 0;
       }
     }
   }

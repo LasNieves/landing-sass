@@ -18,6 +18,7 @@ function App() {
       <CardContent />
       <Testimonios />
       <Cta />
+      <div style={{height:"100px"}} className="max-width-100"></div>
       <Footer />
       <div style={{height:"200px"}} className="max-width-100"></div>
     </div>

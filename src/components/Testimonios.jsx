@@ -10,11 +10,14 @@ const Testimonios = () => {
     <section className="container-sm">
       <div className="row justify-center">
         <div className="col-9 mb-3">
-          <h2 className="text-center font-base text-secondary lh-xl">
+          <h2 className="text-center font-base text-secondary lh-xl fw-200">
             Testimonios
           </h2>
         </div>
-        <div className="row col-10 col-md-11 mb-3 justify-space-around">
+        <div
+          style={{ gap: "20px" }}
+          className="row col-10 col-md-11 col-lg-9 mb-3 justify-center"
+        >
           <TestimoniosCards
             title1="El sr. Miyagi"
             title2="Comerciante"

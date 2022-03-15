@@ -8,14 +8,17 @@ const CardContent = () => {
     <section className="container-sm mt-5">
       <div className="row justify-center">
         <div className="col-9 mb-3">
-          <h2 className="text-center font-base text-secondary lh-xl">
+          <h2 className="text-center font-base text-secondary lh-xl fw-lighter">
             En un solo Clic
           </h2>
-          <p className="text-center font-sm text-secondary lh-md mt-3">
+          <p className="text-center font-sm text-secondary lh-md mt-3 fw-lighter">
             ¿Listo para comenzar?
           </p>
         </div>
-        <div className="col-10 col-sm-8 mb-5">
+        <div
+          style={{ gap: "30px" }}
+          className="row col-10 col-sm-8 col-lg-10 justify-center mb-5"
+        >
           <SingleCardContent
             title="Haz clic en eso."
             description="Elija su columna de predicción de un

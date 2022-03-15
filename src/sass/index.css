@@ -816,6 +816,22 @@ img {
   color: #1e1e1e;
 }
 
+.text-gre {
+  color: #343434;
+}
+
+.bg-gre {
+  background-color: #343434;
+}
+
+.border-gre {
+  border-color: #343434;
+}
+
+.text-gre-hover:hover {
+  color: #343434;
+}
+
 .card-testimonios, .card-items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1818,6 +1834,10 @@ img {
   max-width: 100%;
 }
 
+.margin-0 {
+  margin: 0;
+}
+
 @media (min-width: 425px) {
   .width-sm-5 {
     width: 5%;
@@ -1998,6 +2018,9 @@ img {
   }
   .max-width-sm-100 {
     max-width: 100%;
+  }
+  .margin-sm-0 {
+    margin: 0;
   }
 }
 
@@ -2182,6 +2205,9 @@ img {
   .max-width-md-100 {
     max-width: 100%;
   }
+  .margin-md-0 {
+    margin: 0;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2365,6 +2391,9 @@ img {
   .max-width-lg-100 {
     max-width: 100%;
   }
+  .margin-lg-0 {
+    margin: 0;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -2547,6 +2576,9 @@ img {
   }
   .max-width-xl-100 {
     max-width: 100%;
+  }
+  .margin-xl-0 {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=index.css.map */
