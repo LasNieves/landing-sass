@@ -1,0 +1,49 @@
+@each $key, $val in $colors {
+  .text-#{$key} {
+    color: $val;
+  }
+
+  .bg-#{$key} {
+    background-color: $val;
+  }
+
+  .border-#{$key} {
+    border-color: $val;
+  }
+
+  .text-#{$key}-hover {
+    &:hover {
+      color: $val;
+    }
+  }
+
+  @if ($key == "gray") {
+    @for $i from 1 through 4 {
+      .text-#{$key}-light-#{$i} {
+        color: mix(white, $val, $i * 20);
+      }
+
+      .bg-#{$key}-light-#{$i} {
+        color: mix(white, $val, $i * 20);
+      }
+
+      .border-#{$key}-light-#{$i} {
+        color: mix(white, $val, $i * 20);
+      }
+    }
+
+    @for $i from 1 through 4 {
+      .text-#{$key}-dark-#{$i} {
+        color: mix(black, $val, $i * 20);
+      }
+
+      .bg-#{$key}-dark-#{$i} {
+        background-color: mix(black, $val, $i * 20);
+      }
+
+      .border-#{$key}-dark-#{$i} {
+        border-color: mix(black, $val, $i * 20);
+      }
+    }
+  }
+}

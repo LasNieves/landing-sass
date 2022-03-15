@@ -1,0 +1,457 @@
+@use "sass:math";
+
+%container-all {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+$grid-columns: 12;
+
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  @extend %container-all;
+}
+
+@include sm {
+  .container {
+    max-width: 400px;
+  }
+}
+
+@include md {
+  .container,
+  .container-sm {
+    max-width: 750px;
+  }
+}
+
+@include lg {
+  .container,
+  .container-sm,
+  .container-md {
+    max-width: 980px;
+  }
+}
+
+@include xl {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg {
+    max-width: 1380px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@for $i from 1 through $grid-columns {
+  @if ($i == 1) {
+    .col-#{$i} {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: calc((1 * 100%) / 12);
+    }
+  } @else if($i == 2) {
+    .col-#{$i} {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: calc((2 * 100%) / 12);
+    }
+  } @else if($i == 3) {
+    .col-#{$i} {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: calc((3 * 100%) / 12);
+    }
+  } @else if($i == 4) {
+    .col-#{$i} {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: calc((4 * 100%) / 12);
+    }
+  } @else if($i == 5) {
+    .col-#{$i} {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: calc((5 * 100%) / 12);
+    }
+  } @else if($i == 6) {
+    .col-#{$i} {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: calc((6 * 100%) / 12);
+    }
+  } @else if($i == 7) {
+    .col-#{$i} {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: calc((7 * 100%) / 12);
+    }
+  } @else if($i == 8) {
+    .col-#{$i} {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: calc((8 * 100%) / 12);
+    }
+  } @else if($i == 9) {
+    .col-#{$i} {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: calc((9 * 100%) / 12);
+    }
+  } @else if($i == 10) {
+    .col-#{$i} {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: calc((10 * 100%) / 12);
+    }
+  } @else if($i == 11) {
+    .col-#{$i} {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: calc((11 * 100%) / 12);
+    }
+  } @else if($i == 12) {
+    .col-#{$i} {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: calc((12 * 100%) / 12);
+    }
+  }
+}
+
+@include sm {
+  @for $i from 1 through $grid-columns {
+    @if ($i == 1) {
+      .col-sm#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((1 * 100%) / 12);
+      }
+    } @else if($i == 2) {
+      .col-sm-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((2 * 100%) / 12);
+      }
+    } @else if($i == 3) {
+      .col-sm-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((3 * 100%) / 12);
+      }
+    } @else if($i == 4) {
+      .col-sm-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((4 * 100%) / 12);
+      }
+    } @else if($i == 5) {
+      .col-sm-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((5 * 100%) / 12);
+      }
+    } @else if($i == 6) {
+      .col-sm-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((6 * 100%) / 12);
+      }
+    } @else if($i == 7) {
+      .col-sm-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((7 * 100%) / 12);
+      }
+    } @else if($i == 8) {
+      .col-sm-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((8 * 100%) / 12);
+      }
+    } @else if($i == 9) {
+      .col-sm-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((9 * 100%) / 12);
+      }
+    } @else if($i == 10) {
+      .col-sm-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((10 * 100%) / 12);
+      }
+    } @else if($i == 11) {
+      .col-sm-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((11 * 100%) / 12);
+      }
+    } @else if($i == 12) {
+      .col-sm-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((12 * 100%) / 12);
+      }
+    }
+  }
+}
+@include md {
+  @for $i from 1 through $grid-columns {
+    @if ($i == 1) {
+      .col-md-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((1 * 100%) / 12);
+      }
+    } @else if($i == 2) {
+      .col-md-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((2 * 100%) / 12);
+      }
+    } @else if($i == 3) {
+      .col-md-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((3 * 100%) / 12);
+      }
+    } @else if($i == 4) {
+      .col-md-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((4 * 100%) / 12);
+      }
+    } @else if($i == 5) {
+      .col-md-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((5 * 100%) / 12);
+      }
+    } @else if($i == 6) {
+      .col-md-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((6 * 100%) / 12);
+      }
+    } @else if($i == 7) {
+      .col-md-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((7 * 100%) / 12);
+      }
+    } @else if($i == 8) {
+      .col-md-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((8 * 100%) / 12);
+      }
+    } @else if($i == 9) {
+      .col-md-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((9 * 100%) / 12);
+      }
+    } @else if($i == 10) {
+      .col-md-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((10 * 100%) / 12);
+      }
+    } @else if($i == 11) {
+      .col-md-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((11 * 100%) / 12);
+      }
+    } @else if($i == 12) {
+      .col-md-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((12 * 100%) / 12);
+      }
+    }
+  }
+}
+
+@include lg {
+  @for $i from 1 through $grid-columns {
+    @if ($i == 1) {
+      .col-lg-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((1 * 100%) / 12);
+      }
+    } @else if($i == 2) {
+      .col-lg-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((2 * 100%) / 12);
+      }
+    } @else if($i == 3) {
+      .col-lg-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((3 * 100%) / 12);
+      }
+    } @else if($i == 4) {
+      .col-lg-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((4 * 100%) / 12);
+      }
+    } @else if($i == 5) {
+      .col-lg-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((5 * 100%) / 12);
+      }
+    } @else if($i == 6) {
+      .col-lg-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((6 * 100%) / 12);
+      }
+    } @else if($i == 7) {
+      .col-lg-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((7 * 100%) / 12);
+      }
+    } @else if($i == 8) {
+      .col-lg-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((8 * 100%) / 12);
+      }
+    } @else if($i == 9) {
+      .col-lg-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((9 * 100%) / 12);
+      }
+    } @else if($i == 10) {
+      .col-lg-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((10 * 100%) / 12);
+      }
+    } @else if($i == 11) {
+      .col-lg-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((11 * 100%) / 12);
+      }
+    } @else if($i == 12) {
+      .col-lg-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((12 * 100%) / 12);
+      }
+    }
+  }
+}
+
+@include xl {
+  @for $i from 1 through $grid-columns {
+    @if ($i == 1) {
+      .col-xl-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((1 * 100%) / 12);
+      }
+    } @else if($i == 2) {
+      .col-xl-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((2 * 100%) / 12);
+      }
+    } @else if($i == 3) {
+      .col-xl-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((3 * 100%) / 12);
+      }
+    } @else if($i == 4) {
+      .col-xl-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((4 * 100%) / 12);
+      }
+    } @else if($i == 5) {
+      .col-xl-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((5 * 100%) / 12);
+      }
+    } @else if($i == 6) {
+      .col-xl-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((6 * 100%) / 12);
+      }
+    } @else if($i == 7) {
+      .col-xl-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((7 * 100%) / 12);
+      }
+    } @else if($i == 8) {
+      .col-xl-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((8 * 100%) / 12);
+      }
+    } @else if($i == 9) {
+      .col-xl-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((9 * 100%) / 12);
+      }
+    } @else if($i == 10) {
+      .col-xl-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((10 * 100%) / 12);
+      }
+    } @else if($i == 11) {
+      .col-xl-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((11 * 100%) / 12);
+      }
+    } @else if($i == 12) {
+      .col-xl-#{$i} {
+        box-sizing: border-box;
+        flex-grow: 0;
+        width: calc((12 * 100%) / 12);
+      }
+    }
+  }
+}
+
+$grid-gaps: (
+  "0": 0,
+  "1": 10px,
+  "2": 20px,
+  "3": 30px,
+);
+
+// grid gaps
+@each $key, $val in $grid-gaps {
+  .gap-#{$key} > * {
+    padding: $val;
+  }
+  .gap-#{$key} {
+    margin-left: -$val;
+    margin-right: -$val;
+  }
+}

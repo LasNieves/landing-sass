@@ -1,0 +1,38 @@
+// theme colors
+$primary: #181818 !default;
+$secondary: #ffffff !default;
+$detail: #02e4c0 !default;
+$info: #4452fe !default;
+
+// color palette
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "detail": $detail,
+  "info": $info,
+  "gray": #565656,
+  "gru": #1e1e1e,
+  "gre": #343434,
+) !default;
+
+//Margin & Padding
+$base-margin: 0.5rem;
+$base-padding: 0.5rem;
+
+//Border
+$base-border: 1px;
+
+// font size 16 20 32 52 80
+$base-font-size: 2rem !default; // 32px
+$sm-font-size: $base-font-size * 0.5 !default; // 16px
+$md-font-size: $base-font-size * 0.625 !default; // 20px
+$lg-font-size: $base-font-size * 1.625 !default; // 52px
+$xl-font-size: $base-font-size * 2.5 !default; // 80px
+
+// line height 62 58 30 24 16
+$base-line-height: 1rem !default; //16px
+$sm-line-height: $base-line-height * 0.75 !default;
+$md-line-height: $base-line-height * 1.5 !default;
+$lg-line-height: $base-line-height * 2 !default;
+$xl-line-height: $base-line-height * 2.5 !default;
+$xxl-line-height: $base-line-height * 4.5 !default;

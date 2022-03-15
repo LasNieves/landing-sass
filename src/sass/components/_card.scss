@@ -1,0 +1,33 @@
+%card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  border-radius: 7px;
+}
+
+.card-testimonios {
+  @extend %card;
+  padding: 30px;
+  border: 1px solid #565656;
+
+  .card-title {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .card-subtitle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+.card-items {
+  @extend %card;
+  padding: 40px 20px;
+  align-items: center;
+  background-color: $secondary;
+  text-align: center;
+}
